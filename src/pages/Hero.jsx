@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight animate-slideInLeft">
             Welcome to{" "}
-            <span className="text-[#044eaf]">ElMi Cleaning Services Ltd.</span>
+            <span className="text-white">ElMi Cleaning Services Ltd.</span>
           </h1>
 
           {/* Subheading */}
@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-slideInLeft animation-delay-400">
             <button className="group relative px-8 py-4 bg-[#044eaf] text-gray-900 font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:bg-amber-500 hover:scale-105 hover:shadow-2xl">
-              <span className="relative z-10">Book Your Cleaning Today!</span>
+              <span className="relative z-10 text-white">Book Your Cleaning Today!</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </button>
 
@@ -79,7 +79,7 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <span className="font-semibold">On-Time Service</span>
+              <span className="font-semibold"> Service</span>
             </div>
 
             <div className="flex items-center gap-2 text-white">

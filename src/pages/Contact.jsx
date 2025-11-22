@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-[#faebcd] p-8 lg:p-12 gap-10">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-[#e8f1ff] p-8 lg:p-12 gap-10">
 
       {/* LEFT SIDE */}
       <div
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
 
         {/* Send Button */}
-        <button className="mt-4 bg-[#4b3f30] text-white py-3 px-7 rounded w-32 hover:bg-[#3a3326] transition">
+        <button className="mt-4 bg-[#044eaf] text-white py-3 px-7 rounded w-32 hover:bg-[#3a3326] transition">
           Send
         </button>
       </div>

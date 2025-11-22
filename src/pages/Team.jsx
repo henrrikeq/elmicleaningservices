@@ -5,36 +5,24 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Founder & CEO",
+      name: "Michael Abusuapa",
+      role: "Co-Founder & Operations Manager",
       image: null
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Operations Manager",
+      name: "Elizabeth Adu Serwaa",
+      role: "Co-Founder & Administration Manage",
       image: null
     },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "Lead Cleaner",
-      image: null
-    },
-    {
-      id: 4,
-      name: "David Thompson",
-      role: "Customer Relations",
-      image: null
-    }
+    
   ];
 
   return (
     <div className="min-h-screen via-stone-800 to-stone-900 py-16 px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-light text-black text-center mb-16 tracking-wider">
-          MEET THE TEAM
-        </h1>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-2">MEET THE TEAM</h2>
+      <p className="border w-12 mb-9 border-[#044eaf]"></p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {teamMembers.map((member) => (

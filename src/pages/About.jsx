@@ -4,7 +4,7 @@ import couch from "../assets/images/couch.png";
 const About = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20 py-10">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-">ABOUT US</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-3">ABOUT US</h2>
       <p className="border w-12 mb-6 border-[#044eaf]"></p>
 
       <div className="flex flex-col md:flex-row gap-8 items-start">

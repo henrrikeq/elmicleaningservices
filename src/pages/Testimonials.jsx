@@ -59,7 +59,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFF9D9]">
+    <div className="min-h-screen bg-[#e8f1ff]">
       <p className='text-[2.5rem] px-8 pt-8 text-stone-800'>Testimonials</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">

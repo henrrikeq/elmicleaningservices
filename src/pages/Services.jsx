@@ -73,7 +73,7 @@ const Services = () => {
         transition={{ duration: 0.8 }}
         
       >
-        <h2 className="text-2xl md:text-3xl font-semibold mb-">SERVICES</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-3">SERVICES</h2>
       <p className="border w-12 mb-6 border-[#044eaf]"></p>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
           Professional cleaning solutions tailored to your needs
@@ -106,7 +106,7 @@ const Services = () => {
                 <motion.div
                   animate={isHovered ? { scale: 1.1, rotate: 5 } : { scale: 1, rotate: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="relative mb-4 p-5 rounded-full bg-yellow-400 border-4 border-yellow-400 flex items-center justify-center"
+                  className="relative mb-4 p-5 rounded-full bg-[#044eaf] border-4 border-[#044eaf] flex items-center justify-center"
                 >
                   {/* ICON */}
                   <Icon className="w-10 h-10 text-white" strokeWidth={2} />
@@ -153,7 +153,7 @@ const Services = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-4 bg-yellow-500 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-yellow-600 transition-all"
+          className="px-8 py-4 bg-[#044eaf] text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-yellow-600 transition-all"
         >
           See Gallery
         </motion.button>
