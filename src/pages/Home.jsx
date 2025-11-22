@@ -8,6 +8,7 @@ import Booking from './Booking';
 import Team from './Team';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import Footer from './Footer';
 
 
 
@@ -23,7 +24,7 @@ const Home = () => {
         <Team />
         <Testimonials />
         <Contact />
-        
+        <Footer />
     </div>
   )
 }
