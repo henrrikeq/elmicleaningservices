@@ -28,21 +28,21 @@ const Contact = () => {
 
         {/* Email */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Your Email *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">Full Name *</label>
           <input
             type="email"
             className="w-full bg-transparent border-b border-[#4b3f30] outline-none py-2"
           />
         </div>
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Your Email *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">Phone Number *</label>
           <input
             type="email"
             className="w-full bg-transparent border-b border-[#4b3f30] outline-none py-2"
           />
         </div>
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Your Email *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">Type Of Cleaning Service *</label>
           <input
             type="email"
             className="w-full bg-transparent border-b border-[#4b3f30] outline-none py-2"
@@ -51,7 +51,7 @@ const Contact = () => {
 
         {/* Name */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Your Name *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">Location *</label>
           <input
             type="text"
             className="w-full bg-transparent border-b border-[#4b3f30] outline-none py-2"
@@ -60,7 +60,7 @@ const Contact = () => {
 
         {/* Subject */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Subject *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">Message *</label>
           <input
             type="text"
             className="w-full bg-transparent border-b border-[#4b3f30] outline-none py-2"

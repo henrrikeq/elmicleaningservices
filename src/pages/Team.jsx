@@ -12,7 +12,7 @@ const Team = () => {
     {
       id: 2,
       name: "Elizabeth Adu Serwaa",
-      role: "Co-Founder & Administration Manage",
+      role: "Co-Founder & Administration Manager",
       image: null
     },
     
@@ -21,7 +21,7 @@ const Team = () => {
   return (
     <div className="min-h-screen via-stone-800 to-stone-900 py-16 px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-2">MEET THE TEAM</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-2">MANAGEMENT TEAM</h2>
       <p className="border w-12 mb-9 border-[#044eaf]"></p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
