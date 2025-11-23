@@ -90,7 +90,7 @@ const Footer = () => {
 
           <div className="flex flex-row gap-2 mt-2">
             <p className="text-[19px] mt-1"><BsTelephone /></p>
-            <p className="text-md">0245754840 / 0543747408</p>
+            <p className="text-md">+233 245 754 840 / +233 543 747 408</p>
           </div>
 
           <div className="flex flex-row gap-2 mt-2">

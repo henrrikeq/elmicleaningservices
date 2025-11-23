@@ -9,6 +9,7 @@ import Team from './Team';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
+import Faqs from './Faqs';
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
         <Booking />
         <Team />
         <Testimonials />
+        <Faqs />
         <Contact />
         <Footer />
     </div>
