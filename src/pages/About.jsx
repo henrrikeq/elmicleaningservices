@@ -13,7 +13,7 @@ const About = () => {
             <strong className="text-[#044eaf]">
               ElMi Cleaning Services Ltd.
             </strong>{" "}
-            is a registered professional cleaning company dedicated to
+            is a registered professional cleaning company in Ghana dedicated to
             delivering reliable, detailed, and high-quality cleaning solutions
             for homes, offices, hotels, and real estate developments.
           </p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { User } from 'lucide-react';
+import elimage from "../assets/images/eli.png"
 
 const Team = () => {
   const teamMembers = [
@@ -11,9 +12,9 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Elizabeth Adu Serwaa",
-      role: "Co-Founder & Administration Manager",
-      image: null
+      name: "Elizabeth Serwaa Adu",
+      role: "Co-Founder & Administrative Manager",
+      image: elimage
     },
     
   ];
@@ -21,9 +22,9 @@ const Team = () => {
   return (
     <div className="min-h-screen via-stone-800 to-stone-900 py-16 px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-2">MANAGEMENT TEAM</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-2">MEET OUR TEAM</h2>
       <p className="border w-12 mb-9 border-[#044eaf]"></p>
-        
+        <p className='text-[18px] mb-3 '>We are dedicated professionals committed to delivering top-quality cleaning services with honesty, professionalism, and care. </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {teamMembers.map((member) => (
             <div 
@@ -36,7 +37,7 @@ const Team = () => {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 ) : (
                   <User className="w-20 h-20 text-black" />

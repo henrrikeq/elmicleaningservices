@@ -9,7 +9,8 @@ import Team from './Team';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
-import Faqs from './Faqs';
+import Why from './Why';
+
 
 
 
@@ -19,12 +20,11 @@ const Home = () => {
         <Navbar />
         <Hero />
         <About />
-        <Services />
-        
+        <Services /> 
+        <Why />      
         <Booking />
         <Team />
-        <Testimonials />
-        <Faqs />
+        <Testimonials />      
         <Contact />
         <Footer />
     </div>

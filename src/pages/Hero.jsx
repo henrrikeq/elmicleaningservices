@@ -28,7 +28,7 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-light animate-slideInLeft animation-delay-200">
-            Excellent In Every Cleaning.
+            Excellence In Every Cleaning.
           </p>
 
           {/* Call to Action */}
