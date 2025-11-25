@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import image4 from "../assets/images/image4.jpg"
+import image5 from "../assets/images/image5.jpg"
+import image2 from "../assets/images/image2.jpg"
+import image3 from "../assets/images/image3.jpg"
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -7,27 +11,45 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Grace A.",
-      text: "Efficient, professional, and friendly service. I highly recommend B. Harrison for all your cleaning needs.",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+      name: "Abena.",
+      text: "I’m more than satisfied. You guys did a great job. Thank you very much.",
+      image: image4
     },
     {
       id: 2,
-      name: "Michael T.",
-      text: "Outstanding attention to detail! The team went above and beyond to make our home sparkle. Couldn't be happier with the results.",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80"
+      name: "Nana Yaw.",
+      text: "Thanks for your good service. You are very reliable and did an amazing job in the house. I rate it 5",
+      image: image5
     },
     {
       id: 3,
-      name: "Sarah L.",
-      text: "Reliable and thorough cleaning service. They've been taking care of our office for months now, and we're always impressed.",
-      image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80"
+      name: "Joseph Owusu Afriyie",
+      text: "A reliable, thorough, and friendly service. I’ll definitely be using them again and highly recommend them to anyone looking for quality cleaning.",
+      image: image2
     },
     {
       id: 4,
-      name: "James R.",
-      text: "Professional team with excellent communication. They transformed our space and made the entire process seamless.",
-      image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80"
+      name: "Vicynthia Badu.",
+      text: "The best cleaning services! The place smells so nice too. Good job!",
+      image: image3
+    },
+    {
+      id: 4,
+      name: "Mina Adjeley.",
+      text: "Transforming homes one clean at a time. Fresh scent, spotless finish, and excellent customer service — you won’t regret booking them!",
+      image: image3
+    },
+    {
+      id: 4,
+      name: "Akua Roselyn.",
+      text: "You guys did a great job. Thank you!",
+      image: image3
+    },
+    {
+      id: 4,
+      name: "Mr. Ben.",
+      text: "They did a wonderful job! The results are great. Thank you!",
+      image: image3
     }
   ];
 

@@ -1,5 +1,5 @@
 import React from "react";
-import first from "../assets/images/first.avif";
+import image6 from "../assets/images/image6.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src={first}
+          src={image6}
           alt="Irish Landscape"
           className="w-full h-full object-cover rounded-none shadow-none transform transition-transform duration-500 hover:scale-105"
         />

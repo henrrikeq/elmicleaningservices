@@ -24,7 +24,8 @@ const Team = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold mb-2">MEET OUR TEAM</h2>
       <p className="border w-12 mb-9 border-[#044eaf]"></p>
-        <p className='text-[18px] mb-3 '>We are dedicated professionals committed to delivering top-quality cleaning services with honesty, professionalism, and care. </p>
+        <p className='text-[18px] mb-3 '>We are dedicated professionals committed to delivering top-quality cleaning services with honesty, professionalism, and care.
+(Full team information coming soon.) </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {teamMembers.map((member) => (
             <div 

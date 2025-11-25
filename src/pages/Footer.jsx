@@ -10,8 +10,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-  
-  const currentYear = new Date().getFullYear(); // <-- functional year
+  const currentYear = new Date().getFullYear(); // functional year
 
   return (
     <footer className="bg-blue-900 text-white py-12 px-6">
@@ -30,59 +29,24 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-4">
-
-            <a
-              href="https://www.facebook.com/share/1KUQEAXrvB/?mibextid=wwXIfr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
+            <a href="https://www.facebook.com/share/1KUQEAXrvB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
               <FaFacebookF />
             </a>
-
-            <a
-              href="https://www.instagram.com/elmicleaningservices?igsh=ZjF3NTd6MGV5Z2g0&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
+            <a href="https://www.instagram.com/elmicleaningservices?igsh=ZjF3NTd6MGV5Z2g0&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
               <FaInstagram />
             </a>
-
-            <a
-              href="http://www.tiktok.com/@elmicleaningservices"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
+            <a href="http://www.tiktok.com/@elmicleaningservices" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
               <FaTiktok />
             </a>
-
-            <a
-              href="https://www.linkedin.com/in/elmi-cleaning-services-ltd-165bb6394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
+            <a href="https://www.linkedin.com/in/elmi-cleaning-services-ltd-165bb6394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
               <FaLinkedinIn />
             </a>
-            <a
-              href="https://youtube.com/@elmicleaningservices?si=W07lOxsq5A8EsXf9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
+            <a href="https://youtube.com/@elmicleaningservices?si=W07lOxsq5A8EsXf9" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
               <FaYoutube />
             </a>
-            <a
-              href="https://x.com/elmicleaning?s=21"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer"
-            >
-             <FaXTwitter />
+            <a href="https://x.com/elmicleaning?s=21" target="_blank" rel="noopener noreferrer" className="w-10 h-10 text-black rounded-full bg-[#e8f1ff] flex items-center justify-center cursor-pointer">
+              <FaXTwitter />
             </a>
-
           </div>
         </div>
 
@@ -90,10 +54,18 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-md">
-            <li className="cursor-pointer hover:underline">Home</li>
-            <li className="cursor-pointer hover:underline">About Us</li>
-            <li className="cursor-pointer hover:underline">Contact Us</li>
-            <li className="cursor-pointer hover:underline">Services</li>
+            <li>
+              <a href="#home" className="hover:underline cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a href="#about" className="hover:underline cursor-pointer">About Us</a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline cursor-pointer">Contact Us</a>
+            </li>
+            <li>
+              <a href="#services" className="hover:underline cursor-pointer">Services</a>
+            </li>
           </ul>
         </div>
 

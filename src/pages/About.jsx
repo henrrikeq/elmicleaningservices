@@ -1,5 +1,5 @@
 import React from "react";
-import couch from "../assets/images/couch.png";
+import image7 from "../assets/images/image7.jpg";
 
 const About = () => {
   return (
@@ -48,7 +48,7 @@ const About = () => {
           </div>
         </div>
         <img
-          src={couch}
+          src={image7}
           alt="Cleaning"
           className="w-full md:w-[35%] rounded-xl"
         />

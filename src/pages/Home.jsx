@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
@@ -11,24 +11,46 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Why from './Why';
 
-
-
-
 const Home = () => {
   return (
     <div>
-        <Navbar />
+      <Navbar />
+
+      <section id="home">
         <Hero />
+      </section>
+
+      <section id="about">
         <About />
-        <Services /> 
-        <Why />      
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="why">
+        <Why />
+      </section>
+
+      <section id="booking">
         <Booking />
+      </section>
+
+      <section id="team">
         <Team />
-        <Testimonials />      
+      </section>
+
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+
+      <section id="contact">
         <Contact />
-        <Footer />
+      </section>
+
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
