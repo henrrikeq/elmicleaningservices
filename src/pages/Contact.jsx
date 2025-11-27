@@ -25,8 +25,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",      // Replace with EmailJS Service ID
-        "YOUR_TEMPLATE_ID",     // Replace with EmailJS Template ID
+        "service_lfjkcxh",      // Replace with EmailJS Service ID
+        "template_t1zbkfd",     // Replace with EmailJS Template ID
         {
           name: formData.name,
           phone: formData.phone,
@@ -35,7 +35,7 @@ const Contact = () => {
           message: formData.message,
           to_email: "info.elmicleaningservices@gmail.com",
         },
-        "YOUR_PUBLIC_KEY"       // Replace with EmailJS Public Key
+        "4JGZIfxwS0pzGtn6z"       // Replace with EmailJS Public Key
       )
       .then(
         () => {
@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="bg-white/70 backdrop-blur-sm max-w-md text-center p-10 rounded-lg">
           <h1 className="text-4xl font-medium mb-4 text-[#4b3f30]">Contact Us</h1>
           <p className="text-[#4b3f30] leading-relaxed text-lg">
-            Have a question or need a cleaning service? Reach out to us today.
+            Send Us Your Cleaning Request And Get A Free Quotation!
           </p>
           <p className="text-[#4b3f30] leading-relaxed text-lg mt-3">
             We are here to assist you in maintaining a clean and healthy living environment.

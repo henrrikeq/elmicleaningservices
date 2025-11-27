@@ -7,13 +7,13 @@ const Team = () => {
     {
       id: 1,
       name: "Michael Abusuapa",
-      role: "Co-Founder & Operations Manager",
+      role: "Director & Operations Manager",
       image: null
     },
     {
       id: 2,
       name: "Elizabeth Serwaa Adu",
-      role: "Co-Founder & Administrative Manager",
+      role: "Director & Administrative Manager",
       image: elimage
     },
     

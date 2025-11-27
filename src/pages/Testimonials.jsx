@@ -3,7 +3,12 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import image4 from "../assets/images/image4.jpg"
 import image5 from "../assets/images/image5.jpg"
 import image2 from "../assets/images/image2.jpg"
-import image3 from "../assets/images/image3.jpg"
+import testimonial1 from "../assets/images/testimonial1.jpg"
+import testimonial2 from "../assets/images/testimonial2.jpg"
+import testimonial4 from "../assets/images/testimonial4.jpg"
+import testimonial7 from "../assets/images/testimonial7.PNG"
+import testimonial5 from "../assets/images/testimonial5.PNG"
+import testimonial3 from "../assets/images/testimonial3.PNG"
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,43 +18,43 @@ const Testimonials = () => {
       id: 1,
       name: "Abena.",
       text: "I’m more than satisfied. You guys did a great job. Thank you very much.",
-      image: image4
+      image: testimonial3
     },
     {
       id: 2,
       name: "Nana Yaw.",
       text: "Thanks for your good service. You are very reliable and did an amazing job in the house. I rate it 5",
-      image: image5
+      image: testimonial5
     },
     {
       id: 3,
-      name: "Joseph Owusu Afriyie",
+      name: "Joseph Owusu Boateng",
       text: "A reliable, thorough, and friendly service. I’ll definitely be using them again and highly recommend them to anyone looking for quality cleaning.",
-      image: image2
+      image: testimonial7
     },
     {
       id: 4,
       name: "Vicynthia Badu.",
       text: "The best cleaning services! The place smells so nice too. Good job!",
-      image: image3
+      image: testimonial1
     },
     {
       id: 4,
       name: "Mina Adjeley.",
       text: "Transforming homes one clean at a time. Fresh scent, spotless finish, and excellent customer service — you won’t regret booking them!",
-      image: image3
+      image: testimonial2
     },
     {
       id: 4,
       name: "Akua Roselyn.",
       text: "You guys did a great job. Thank you!",
-      image: image3
+      image: testimonial4
     },
     {
       id: 4,
-      name: "Mr. Ben.",
+      name: "Rose.",
       text: "They did a wonderful job! The results are great. Thank you!",
-      image: image3
+      image: testimonial1
     }
   ];
 

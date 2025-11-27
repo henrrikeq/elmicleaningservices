@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { BsWhatsapp } from 'react-icons/bs'; // WhatsApp icon
+import React, { useState, useEffect } from "react";
+import { BsWhatsapp } from "react-icons/bs"; // WhatsApp icon
+import favicon from "../assets/images/favicon.jpg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,22 +8,26 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (isMenuOpen && !e.target.closest('nav') && !e.target.closest('button')) {
+      if (
+        isMenuOpen &&
+        !e.target.closest("nav") &&
+        !e.target.closest("button")
+      ) {
         setIsMenuOpen(false);
       }
     };
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, [isMenuOpen]);
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
   }, [isMenuOpen]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -33,19 +38,28 @@ const Navbar = () => {
     "https://wa.me/233245754840?text=Hello!%20I%20would%20like%20to%20book%20your%20services.";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white'}`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-white"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 md:h-28">
+
           {/* Logo */}
-          <div className="flex:shrink-0">
-            <a href="#home" className="text-2xl font-bold text-gray-800 hover:text-gray-600 transition-colors">
-              LOGO
-            </a>
+          <div className="flex flex-col items-center justify-center">
+
+            <img
+              src={favicon}
+              alt="Logo"
+              className="w-36 h-16 md:w-24 object-contain"
+            />
+            <p className="text-[11px] text-[#044eaf] font-semibold ">Excellence In Every Cleaning</p>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {['home', 'about', 'services', 'team', 'contact'].map((section) => (
+          <nav className="hidden md:flex items-center gap-10">
+            {["home", "about", "services", "team", "contact"].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
@@ -65,7 +79,7 @@ const Navbar = () => {
             className="hidden md:flex items-center gap-2 border-[1.5px] border-[#044eaf] px-6 py-2 text-gray-800 font-semibold hover:bg-[#044eaf] hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             <BsWhatsapp size={20} />
-            Book Now
+            REQUEST A FREE QUOTE
           </a>
 
           {/* Mobile Menu Button */}
@@ -75,15 +89,27 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             <svg
-              className={`w-6 h-6 transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
+              className={`w-6 h-6 transition-transform duration-300 ${
+                isMenuOpen ? "rotate-90" : ""
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
               {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               )}
             </svg>
           </button>
@@ -91,9 +117,15 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
+        }`}
+      >
         <nav className="flex flex-col items-center gap-6 py-4 text-[#044eaf]">
-          {['home', 'about', 'services', 'contact'].map((section) => (
+          {["home", "about", "services", "contact"].map((section) => (
             <a
               key={section}
               href={`#${section}`}
@@ -113,13 +145,18 @@ const Navbar = () => {
             className="flex items-center gap-2 border-[1.5px] border-[#044eaf] px-6 py-2 text-gray-800 font-semibold hover:bg-[#044eaf] hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             <BsWhatsapp size={20} />
-            Book Now
+            REQUEST A FREE QUOTE
           </a>
         </nav>
       </div>
 
       {/* Mobile Menu Overlay */}
-      {isMenuOpen && <div className="fixed inset-0 bg-white bg-opacity-50 z-[-1] md:hidden" onClick={closeMenu}></div>}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-white bg-opacity-50 z-[-1] md:hidden"
+          onClick={closeMenu}
+        ></div>
+      )}
     </header>
   );
 };

@@ -93,7 +93,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="border-t border-gray-500 mt-10 pt-6 text-center text-md">
         <p className="text-blue-100 text-sm mb-2 md:mb-0">
-          &copy; {currentYear} ElMi Cleaning Services Ltd. | Excellence in Every Cleaning
+          &copy; {currentYear} ElMi CLEANING SERVICES LTD. | Excellence in Every Cleaning
         </p>
       </div>
     </footer>
