@@ -25,8 +25,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_lfjkcxh",      // Replace with EmailJS Service ID
-        "template_t1zbkfd",     // Replace with EmailJS Template ID
+        "service_lfjkcxh", // Replace with EmailJS Service ID
+        "template_t1zbkfd", // Replace with EmailJS Template ID
         {
           name: formData.name,
           phone: formData.phone,
@@ -35,7 +35,7 @@ const Contact = () => {
           message: formData.message,
           to_email: "info.elmicleaningservices@gmail.com",
         },
-        "4JGZIfxwS0pzGtn6z"       // Replace with EmailJS Public Key
+        "4JGZIfxwS0pzGtn6z" // Replace with EmailJS Public Key
       )
       .then(
         () => {
@@ -58,7 +58,6 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row bg-[#e8f1ff] p-8 lg:p-12 gap-10">
-
       {/* LEFT SIDE */}
       <div
         className="flex-1 rounded-lg bg-cover bg-center flex items-center justify-center p-6"
@@ -67,13 +66,24 @@ const Contact = () => {
         }}
       >
         <div className="bg-white/70 backdrop-blur-sm max-w-md text-center p-10 rounded-lg">
-          <h1 className="text-4xl font-medium mb-4 text-[#4b3f30]">Contact Us</h1>
-          <p className="text-[#4b3f30] leading-relaxed text-lg">
+          <h1 className="text-4xl font-medium mb-4 text-blue-700">
+            Contact Us
+          </h1>
+          <p className="text-gray-600 leading-relaxed text-lg">
             Send Us Your Cleaning Request And Get A Free Quotation!
           </p>
-          <p className="text-[#4b3f30] leading-relaxed text-lg mt-3">
-            We are here to assist you in maintaining a clean and healthy living environment.
+          <p className="text-gray-600 leading-relaxed text-lg mt-3">
+            We are here to assist you in maintaining a clean and healthy living
+            environment.
           </p>
+
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-blue-700 mb-2 mt-2">
+              Business Hours
+            </h3>
+            <p className="text-gray-600">Monday - Friday: 8:00 AM - 8:00 PM</p>
+            <p className="text-gray-600">Saturday & Sunday: 8:00 AM - 8:00 PM</p>
+          </div>
         </div>
       </div>
 
@@ -82,10 +92,11 @@ const Contact = () => {
         onSubmit={sendEmail}
         className="flex-1 flex flex-col justify-center pr-0 lg:pr-20"
       >
-
         {/* Full Name */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Full Name *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">
+            Full Name *
+          </label>
           <input
             name="name"
             value={formData.name}
@@ -98,7 +109,9 @@ const Contact = () => {
 
         {/* Phone Number */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Phone Number *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">
+            Phone Number *
+          </label>
           <input
             name="phone"
             value={formData.phone}
@@ -111,7 +124,9 @@ const Contact = () => {
 
         {/* Cleaning Service */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Type Of Cleaning Service *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">
+            Type Of Cleaning Service *
+          </label>
           <input
             name="service"
             value={formData.service}
@@ -124,7 +139,9 @@ const Contact = () => {
 
         {/* Location */}
         <div className="mb-6">
-          <label className="block text-[#4b3f30] text-sm mb-2">Location *</label>
+          <label className="block text-[#4b3f30] text-sm mb-2">
+            Location *
+          </label>
           <input
             name="location"
             value={formData.location}
@@ -148,9 +165,7 @@ const Contact = () => {
         </div>
 
         {/* Status Message */}
-        {status && (
-          <p className="text-sm text-green-600 mt-2 mb-2">{status}</p>
-        )}
+        {status && <p className="text-sm text-green-600 mt-2 mb-2">{status}</p>}
 
         {/* Send Button */}
         <button

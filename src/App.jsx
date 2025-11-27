@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import Hero from './pages/Hero'
+import Gallery from './pages/Gallery'
 
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
       path: "hero",
       element: <Hero />,
     },
+    {
+      path: "gallery",
+      element: <Gallery />,
+    }
   ])
 
   return (

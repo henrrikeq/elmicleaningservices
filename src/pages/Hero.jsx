@@ -14,7 +14,6 @@ const Hero = () => {
 
         {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-black/60"></div>
-
       </div>
 
       {/* Content */}
@@ -33,16 +32,24 @@ const Hero = () => {
 
           {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-slideInLeft animation-delay-400">
-            <button className="group relative px-8 py-4 bg-[#044eaf] text-gray-900 font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:bg-amber-500 hover:scale-105 hover:shadow-2xl">
+            {/* Book a Cleaning → Contact Section */}
+            <a
+              href="#contact"
+              className="group relative px-8 py-4 bg-[#044eaf] text-gray-900 font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:bg-amber-500 hover:scale-105 hover:shadow-2xl"
+            >
               <span className="relative z-10 text-white">
                 Book Your Cleaning Today!
               </span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-            </button>
+            </a>
 
-            <button className="px-8 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-white hover:text-gray-900 hover:scale-105">
+            {/* Learn More → About Section */}
+            <a
+              href="#about"
+              className="px-8 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-white hover:text-gray-900 hover:scale-105"
+            >
               Learn More
-            </button>
+            </a>
           </div>
 
           {/* Features */}

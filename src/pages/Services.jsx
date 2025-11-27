@@ -11,6 +11,7 @@ import {
   Trees,
   PartyPopper
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   { 
@@ -144,20 +145,23 @@ const Services = () => {
 
       {/* CTA */}
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        viewport={{ once: true }}
-        className="text-end mt-16"
-      >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-4 bg-[#044eaf] text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-yellow-600 transition-all"
-        >
-          See Gallery
-        </motion.button>
-      </motion.div>
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  viewport={{ once: true }}
+  className="text-end mt-16"
+>
+  <Link to="/gallery">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="px-8 py-4 bg-[#044eaf] text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-yellow-600 transition-all"
+    >
+      See Gallery
+    </motion.button>
+  </Link>
+</motion.div>
+
 
     </div>
   );
