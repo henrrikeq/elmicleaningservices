@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/gallery/img1.jpg",
-  "/gallery/img2.jpg",
-  "/gallery/img3.jpg",
-  "/gallery/img4.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764254786/IMG_5569_psd07o.heic",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255113/g10_fjdxlb.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255101/g11_vnnehm.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255130/g9_wthidv.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255025/g16_flhtib.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255041/g15_ux9zbq.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255074/g13_hn4zxt.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255087/g12_g2asc4.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764254250/IMG_6396_weip5t.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764254279/IMG_6442_t1u9aj.jpg",
+  "https://res.cloudinary.com/dxggbrrre/image/upload/v1764254293/IMG_6393_zxrssq.jpg",
 ];
 
 const videos = [
@@ -35,7 +42,7 @@ const Gallery = () => {
         <img
           src={images[currentIndex]}
           alt="Gallery Slide"
-          className="w-full h-[400px] object-cover transition-all duration-700"
+          className="w-full h-[400px] object-contain transition-all duration-700"
         />
 
         {/* Prev Button */}

@@ -18,25 +18,29 @@ const Testimonials = () => {
       id: 1,
       name: "Abena.",
       text: "I’m more than satisfied. You guys did a great job. Thank you very much.",
-      image: testimonial3,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255893/testimonial2_vanivm.jpg",
     },
     {
       id: 2,
       name: "Nana Yaw.",
       text: "Thanks for your good service. You are very reliable and did an amazing job in the house. I rate it 5",
-      image: testimonial5,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255880/testimonial1_dyry1r.jpg",
     },
     {
       id: 3,
       name: "Joseph Owusu Boateng",
       text: "A reliable, thorough, and friendly service. I’ll definitely be using them again and highly recommend them to anyone looking for quality cleaning.",
-      image: testimonial7,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255938/testimonial4_vmp8nd.jpg",
     },
     {
       id: 4,
       name: "Vicynthia Badu.",
       text: "The best cleaning services! The place smells so nice too. Good job!",
-      image: testimonial1,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255968/testimonial5_zng7gf.jpg",
     },
     {
       id: 4,
@@ -48,13 +52,15 @@ const Testimonials = () => {
       id: 4,
       name: "Akua Roselyn.",
       text: "You guys did a great job. Thank you!",
-      image: testimonial4,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255917/testimonial7_becyhm.jpg",
     },
     {
       id: 4,
       name: "Rose.",
       text: "They did a wonderful job! The results are great. Thank you!",
-      image: testimonial1,
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764256004/testimonial6_vifjin.jpg",
     },
   ];
 
@@ -131,8 +137,8 @@ const Testimonials = () => {
             </div>
 
             <button
-  onClick={goToNext}
-  className="
+              onClick={goToNext}
+              className="
     bg-[#044eaf] 
     text-white 
     px-8 py-3 
@@ -146,10 +152,9 @@ const Testimonials = () => {
     shadow-md
     hover:shadow-xl
   "
->
-  Read More
-</button>
-
+            >
+              Read More
+            </button>
           </div>
         </div>
 
@@ -165,7 +170,7 @@ const Testimonials = () => {
               <img
                 src={testimonial.image}
                 alt={`${testimonial.name}'s testimonial`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}

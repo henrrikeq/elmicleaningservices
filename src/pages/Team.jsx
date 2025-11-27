@@ -8,13 +8,13 @@ const Team = () => {
       id: 1,
       name: "Michael Abusuapa",
       role: "Director & Operations Manager",
-      image: null
+      image: "https://res.cloudinary.com/dxggbrrre/image/upload/v1764256732/michael_twskgc.jpg"
     },
     {
       id: 2,
       name: "Elizabeth Serwaa Adu",
       role: "Director & Administrative Manager",
-      image: elimage
+      image: "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255845/eli_ionlk1.png"
     },
     
   ];
@@ -33,7 +33,7 @@ const Team = () => {
               className="flex flex-col items-center text-center group"
             >
               {/* Image Placeholder */}
-              <div className="w-48 h-48 mb-6 bg-stone-700/50 border-2 border-white/30 rounded-full overflow-hidden flex items-center justify-center group-hover:border-white/60 transition-all duration-300">
+              <div className="w-48 h-48 mb-6 bg-stone-700/50 rounded-full overflow-hidden flex items-center justify-center group-hover:border-white/60 transition-all duration-300">
                 {member.image ? (
                   <img 
                     src={member.image} 

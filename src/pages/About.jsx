@@ -48,7 +48,7 @@ const About = () => {
           </div>
         </div>
         <img
-          src={image7}
+          src="https://res.cloudinary.com/dxggbrrre/image/upload/v1764255862/image7_eqxzr5.jpg"
           alt="Cleaning"
           className="w-full md:w-[35%] rounded-xl"
         />

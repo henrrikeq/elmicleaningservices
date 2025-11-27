@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src={image6}
+          src="https://res.cloudinary.com/dxggbrrre/image/upload/v1764256036/image3_mbuuj3.jpg"
           alt="Irish Landscape"
           className="w-full h-full object-cover rounded-none shadow-none transform transition-transform duration-500 hover:scale-105"
         />
