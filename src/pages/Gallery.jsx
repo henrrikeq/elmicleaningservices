@@ -22,7 +22,7 @@ const videos = [
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slideshow every 4 secs
+  // Auto slideshow every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -31,14 +31,19 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="pt-28 pb-10 bg-gray-100 min-h-screen">
-      {/* Header */}
-      <h1 className="text-4xl font-bold text-center text-[#044eaf] mb-10">
-        Gallery
-      </h1>
+    <div className="pt-28 pb-10 bg-white min-h-screen">
+      {/* Page Header */}
+      <div className="max-w-4xl mx-auto text-center px-4">
+        <h1 className="text-4xl font-bold text-[#044eaf] mb-4">Gallery</h1>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Welcome to our Gallery! Explore the transformation we bring to every
+          space through our professional cleaning services. From spotless homes
+          to sparkling offices, see our work in action.
+        </p>
+      </div>
 
       {/* Image Slideshow */}
-      <div className="max-w-4xl mx-auto relative overflow-hidden rounded-xl shadow-lg">
+      <div className="max-w-4xl mx-auto relative mt-10 overflow-hidden rounded-xl shadow-lg">
         <img
           src={images[currentIndex]}
           alt="Gallery Slide"
@@ -52,7 +57,7 @@ const Gallery = () => {
               currentIndex === 0 ? images.length - 1 : currentIndex - 1
             )
           }
-          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/60 p-2 rounded-full hover:bg-white"
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white shadow-md"
         >
           ◀
         </button>
@@ -60,7 +65,7 @@ const Gallery = () => {
         {/* Next Button */}
         <button
           onClick={() => setCurrentIndex((currentIndex + 1) % images.length)}
-          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/60 p-2 rounded-full hover:bg-white"
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white shadow-md"
         >
           ▶
         </button>

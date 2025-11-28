@@ -19,14 +19,14 @@ const Testimonials = () => {
       name: "Abena.",
       text: "I’m more than satisfied. You guys did a great job. Thank you very much.",
       image:
-        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255893/testimonial2_vanivm.jpg",
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764308751/h1_ku6fou.jpg",
     },
     {
       id: 2,
       name: "Nana Yaw.",
       text: "Thanks for your good service. You are very reliable and did an amazing job in the house. I rate it 5",
       image:
-        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255880/testimonial1_dyry1r.jpg",
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764308770/h2_aggrjl.jpg",
     },
     {
       id: 3,

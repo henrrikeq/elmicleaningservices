@@ -18,7 +18,7 @@ const Footer = () => {
 
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Elmi Cleaning Services</h2>
+          <h2 className="text-2xl font-semibold mb-4">ElMi Cleaning Services</h2>
           <p className="text-md leading-relaxed">
             ElMi Cleaning Services Ltd. is a registered professional cleaning company in Ghana dedicated 
             to delivering reliable, detailed, and high-quality cleaning solutions for homes, 

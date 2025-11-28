@@ -14,7 +14,7 @@ const Team = () => {
       id: 2,
       name: "Elizabeth Serwaa Adu",
       role: "Director & Administrative Manager",
-      image: "https://res.cloudinary.com/dxggbrrre/image/upload/v1764255845/eli_ionlk1.png"
+      image: "https://res.cloudinary.com/dxggbrrre/image/upload/v1764306099/serwaa_hgppu7.jpg"
     },
     
   ];

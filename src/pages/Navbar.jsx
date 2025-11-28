@@ -14,11 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (
-        isMenuOpen &&
-        !e.target.closest("nav") &&
-        !e.target.closest("button")
-      ) {
+      if (isMenuOpen && !e.target.closest("nav") && !e.target.closest("button")) {
         setIsMenuOpen(false);
       }
     };
@@ -33,9 +29,20 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  // WhatsApp link with prefilled message
-  const whatsappLink =
-    "https://wa.me/233245754840?text=Hello!%20I%20would%20like%20to%20book%20your%20services.";
+  const phoneNumber = "233245754840"; // Client's WhatsApp number
+  const defaultMessage = "Hello! I would like to request a free quotation for cleaning services.";
+
+  // Function to handle WhatsApp click with editable message
+  const handleWhatsAppClick = () => {
+    const userMessage = prompt(
+      "Edit your message before sending:",
+      defaultMessage
+    );
+    if (userMessage !== null) {
+      const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(userMessage)}`;
+      window.open(whatsappLink, "_blank");
+    }
+  };
 
   return (
     <header
@@ -48,13 +55,14 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex flex-col items-center justify-center">
-
             <img
               src={favicon}
               alt="Logo"
               className="w-36 h-16 md:w-24 object-contain"
             />
-            <p className="text-[11px] text-[#044eaf] font-semibold ">Excellence In Every Cleaning</p>
+            <p className="text-[11px] text-[#044eaf] font-semibold">
+              Excellence In Every Cleaning
+            </p>
           </div>
 
           {/* Desktop Navigation */}
@@ -72,15 +80,13 @@ const Navbar = () => {
           </nav>
 
           {/* Desktop Book Now Button */}
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleWhatsAppClick}
             className="hidden md:flex items-center gap-2 border-[1.5px] border-[#044eaf] px-6 py-2 text-gray-800 font-semibold hover:bg-[#044eaf] hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             <BsWhatsapp size={20} />
             REQUEST A FREE QUOTE
-          </a>
+          </button>
 
           {/* Mobile Menu Button */}
           <button
@@ -89,9 +95,7 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             <svg
-              className={`w-6 h-6 transition-transform duration-300 ${
-                isMenuOpen ? "rotate-90" : ""
-              }`}
+              className={`w-6 h-6 transition-transform duration-300 ${isMenuOpen ? "rotate-90" : ""}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -119,9 +123,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen
-            ? "max-h-screen opacity-100"
-            : "max-h-0 opacity-0 overflow-hidden"
+          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
         <nav className="flex flex-col items-center gap-6 py-4 text-[#044eaf]">
@@ -138,15 +140,13 @@ const Navbar = () => {
           ))}
 
           {/* Mobile Book Now Button */}
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleWhatsAppClick}
             className="flex items-center gap-2 border-[1.5px] border-[#044eaf] px-6 py-2 text-gray-800 font-semibold hover:bg-[#044eaf] hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             <BsWhatsapp size={20} />
             REQUEST A FREE QUOTE
-          </a>
+          </button>
         </nav>
       </div>
 
