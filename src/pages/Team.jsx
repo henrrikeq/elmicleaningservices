@@ -1,6 +1,6 @@
 import React from 'react';
 import { User } from 'lucide-react';
-import elimage from "../assets/images/eli.png"
+
 
 const Team = () => {
   const teamMembers = [

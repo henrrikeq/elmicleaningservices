@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import image4 from "../assets/images/image4.jpg";
-import image5 from "../assets/images/image5.jpg";
-import image2 from "../assets/images/image2.jpg";
-import testimonial1 from "../assets/images/testimonial1.jpg";
+
+
+
+
 import testimonial2 from "../assets/images/testimonial2.jpg";
-import testimonial4 from "../assets/images/testimonial4.jpg";
-import testimonial7 from "../assets/images/testimonial7.PNG";
-import testimonial5 from "../assets/images/testimonial5.PNG";
-import testimonial3 from "../assets/images/testimonial3.PNG";
+
+
+
+
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,7 +46,7 @@ const Testimonials = () => {
       id: 4,
       name: "Mina Adjeley.",
       text: "Transforming homes one clean at a time. Fresh scent, spotless finish, and excellent customer service — you won’t regret booking them!",
-      image: testimonial2,
+      image: "https://res.cloudinary.com/dxggbrrre/image/upload/v1764393573/test_sn8cxv.jpg",
     },
     {
       id: 4,
@@ -61,6 +61,13 @@ const Testimonials = () => {
       text: "They did a wonderful job! The results are great. Thank you!",
       image:
         "https://res.cloudinary.com/dxggbrrre/image/upload/v1764256004/testimonial6_vifjin.jpg",
+    },
+    {
+      id: 4,
+      name: "Mr. Ben.",
+      text: "They did a wonderful job! I will definitely recommend. Thank you!",
+      image:
+        "https://res.cloudinary.com/dxggbrrre/image/upload/v1764393553/IMG_6372_peitsr.jpg",
     },
   ];
 

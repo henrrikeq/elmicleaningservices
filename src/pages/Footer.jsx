@@ -75,7 +75,8 @@ const Footer = () => {
 
           <div className="flex flex-row gap-1 mt-2">
             <p className="text-[22px] mt-[0.5px]"><MdOutlineLocationOn /></p>
-            <p className="text-md">P. O. BOX 112, Accra</p>
+            <p className="text-md">Oyarifa - Accra, Ghana</p>
+
           </div>
 
           <div className="flex flex-row gap-2 mt-2">
@@ -87,7 +88,9 @@ const Footer = () => {
             <p className="text-[20px] mt-1"><MdOutlineMailOutline /></p>
             <p className="text-md">info.elmicleaningservices@gmail.com</p>
           </div>
+          <p className='flex flex-row mt-7 text-[16px] font-semibold'>Available Nationwide</p>
         </div>
+        
       </div>
 
       {/* Footer Bottom Section */}
